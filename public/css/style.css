@@ -80,3 +80,10 @@
 .removenote{
   float: right;
 }
+
+#modaltitle{
+  font-family: Univers;
+  font-size: 25%;
+  float: center;
+  position: relative;
+}

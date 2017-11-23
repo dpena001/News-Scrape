@@ -1,4 +1,11 @@
 {{#if articles}}
+  <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" id = "modala">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <h4>&nbsp&nbsp{{articles.length}} Article(s) Retrieved!<h4>
+    </div>
+  </div>
+</div>
   {{#each articles}}
     <div class="card" style="width: 100%;">
         <div class="card-header"><a href="{{this.link}}" target="_blank">{{this.title}}</a><div class="savebtn">  <button type= "submit" class="btn btn-primary btnsave" id="{{this.newsid}}" title="{{this.title}}" link ="{{this.link}}" snipe = "{{this.snipe}}">SAVE ARTICLE</button></div></div>
