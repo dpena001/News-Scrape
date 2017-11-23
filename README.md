@@ -1,6 +1,6 @@
 # CNBC NEWS SCRAPER
 
-Is a web app that fetch and retrieves until 16 news articles posted in the CNBC News Portal (www.cnbc.com) specifically in World Economy Section, so users can choise, save and adding notes about these. Each news has a link to original article in the refered portal.   
+Is a web app that fetch and retrieves until 16 news articles posted in the CNBC News Portal (www.cnbc.com) specifically in World Economy Section, so users can choose, save and adding notes about these. Each news has a link to original article in the refered portal.   
 
 Technically is a full web application that include logics and coding in client side (Front End) and server side (Server Side).
 
