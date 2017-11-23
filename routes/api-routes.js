@@ -29,16 +29,14 @@ module.exports = function(app) {
 
 
    app.get("/scrape", function(req, res) {
-     //console.log("ENTRO A FUNCION");
-    axios.get("https://www.cnbc.com/world-economy/").then(function(response) {
+    
+     axios.get("https://www.cnbc.com/world-economy/").then(function(response) {
      var list = [];
-      //console.log("CREO VARIABLE");
      var $ = cheerio.load(response.data);
 
     $(".stories_assetlist li .asset").each(function(i, element) {
       
       var result = {};
-
       result.title = $(element).children(".headline").find("a").text();
 
       result.link = "https://www.cnbc.com"+$(element).children(".headline").find("a").attr("href");
@@ -54,11 +52,16 @@ module.exports = function(app) {
          if (idnews==null){  
              list.push(result);
          };
+         if (i >=15) {
+             return res.render("index",{articles:list});
+         }
       });
-  
+     
   });
-  return res.render("index",{articles:list});
+
+   
  });
+    
 });
 
   // Route for saving/updating an Article's associated Note
