@@ -27,9 +27,11 @@ app.use(bodyParser.json());
 app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/news_scraper";
+
 // Connect to the Mongo DB
 mongoose.Promise = Promise;
-mongoose.connect("mongodb://localhost/news_scraper", {
+mongoose.connect(MONGODB_URI, {
   useMongoClient: true
 });
 
