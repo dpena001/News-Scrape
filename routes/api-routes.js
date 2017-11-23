@@ -51,7 +51,6 @@ module.exports = function(app) {
 
       if (idnews==null){  
             list.push(result);
-            console.log(list);
        };
     });
   

@@ -31,7 +31,7 @@ $(document).on("click", ".btnscrape", function() {
   })
   //.done(function(data){
       // window.location = "/scrape";
-       $("#modala").modal('show');
+   //    $("#modala").modal('show');
   //});
 }); 
 
