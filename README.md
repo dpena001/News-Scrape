@@ -12,7 +12,7 @@ Express-handlebars (templating handling),
 
 Mongoose (Connecting and Managing  Mongodb database),
 
-Axios and Cherios (Retrieving and manipulation  contents posted in other Portals and Web pages)
+Axios and Cheerios (Retrieving and manipulation  contents posted in other Portals and Web pages)
 
 This app has been deployed in Heroku application server and it can be running it on line 
 
