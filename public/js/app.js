@@ -29,10 +29,10 @@ $(document).on("click", ".btnscrape", function() {
     method: "GET",
     url: "/scrape",
   })
-  .done(function(data){
-       window.location = "/scrape";
+  //.done(function(data){
+      // window.location = "/scrape";
        $("#modala").modal('show');
-  });
+  //});
 }); 
 
 
