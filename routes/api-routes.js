@@ -47,16 +47,18 @@ module.exports = function(app) {
 
       result.newsid = $(element).children(".headline").find("a").attr("data-nodeid");
        
-      db.Article.findOne({newsid: result.newsid}, (err,idnews) => {
+      db.Article
+      .findOne({newsid: result.newsid})
+      .then(function(idnews) {
 
-      if (idnews==null){  
-            list.push(result);
-       };
-    });
+         if (idnews==null){  
+             list.push(result);
+         };
+      });
   
   });
   res.render("index",{articles:list});
-});
+ });
 });
 
   // Route for saving/updating an Article's associated Note
