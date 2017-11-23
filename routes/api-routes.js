@@ -29,10 +29,10 @@ module.exports = function(app) {
 
 
    app.get("/scrape", function(req, res) {
-     console.log("ENTRO A FUNCION");
+     //console.log("ENTRO A FUNCION");
     axios.get("https://www.cnbc.com/world-economy/").then(function(response) {
      var list = [];
-      console.log("CREO VARIABLE");
+      //console.log("CREO VARIABLE");
      var $ = cheerio.load(response.data);
 
     $(".stories_assetlist li .asset").each(function(i, element) {
@@ -46,7 +46,7 @@ module.exports = function(app) {
       result.snipe = $(element).children("p").text();   
 
       result.newsid = $(element).children(".headline").find("a").attr("data-nodeid");
-       console.log(result);
+       
       db.Article.findOne({newsid: result.newsid}, (err,idnews) => {
 
       if (idnews==null){  
