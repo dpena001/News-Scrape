@@ -18,7 +18,6 @@ $(document).on("click", ".btnsave", function() {
     }
   })
   .done(function(data){
-    console.log(data);
     window.location = "/scrape";
   })
 }); 
@@ -31,7 +30,6 @@ $(document).on("click", ".btnscrape", function() {
     url: "/scrape",
   })
   .done(function(data){
-       console.log(data);
        window.location = "/scrape";
        $("#modala").modal('show');
   });
