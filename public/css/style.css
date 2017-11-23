@@ -1,0 +1,82 @@
+@font-face {
+    font-family: Univers;
+    src: url(Univers-BlackExt.otf);
+}
+
+#wrapper {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 1%;
+       }
+      #articles {
+        border: solid thick darkblue;
+        overflow: auto;
+        width: 100%;
+        height: 100px;
+      }
+      #notes {
+        float: right;
+        width: 30%;
+      }
+      textarea, input {
+        display: block;
+        width: 100%;
+        background-color: #FCF5C7;
+      }
+      input {
+        height: 36px;
+        font-size: 24px;
+      }
+      textarea {
+        height: 200px;
+        font-size: 18px;
+      }
+
+    .alert.alert-info {
+       background-color: orange;
+       color: #ffffff;
+    }
+
+    .material-icons {
+    font-family: Univers;
+    color: white;
+    font-weight: bold;
+}
+
+.savebtn {
+    float: right;
+    position: relative;
+}
+
+.card{
+   margin-bottom: 1%;
+} 
+
+.remove{
+   float: right;
+  position: relative;
+}
+
+.space{
+  width: 2%;
+  float: right;
+  position: relative;
+}
+
+#NotesArt {
+    width: 100%;
+    height: 50%;
+    border: solid thick darkblue;
+    border-width:1px;
+    color: blue;
+    font-family: Univers;
+    text-align: left;
+    background: white;
+    float: left;
+    position: relative;
+}
+
+.removenote{
+  float: right;
+}
