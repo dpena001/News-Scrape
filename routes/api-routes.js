@@ -57,7 +57,7 @@ module.exports = function(app) {
       });
   
   });
-  res.render("index",{articles:list});
+  return res.render("index",{articles:list});
  });
 });
 

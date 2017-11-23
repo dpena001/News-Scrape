@@ -23,17 +23,17 @@ $(document).on("click", ".btnsave", function() {
 }); 
 
 
-$(document).on("click", ".btnscrape", function() {
+//$(document).on("click", ".btnscrape", function() {
  // Now make an ajax call for Scraping
-  $.ajax({
-    method: "GET",
-    url: "/scrape",
-  })
+//  $.ajax({
+//    method: "GET",
+//    url: "/scrape",
+//  })
   //.done(function(data){
       // window.location = "/scrape";
    //    $("#modala").modal('show');
   //});
-}); 
+//}); 
 
 
 $(".btnmodal").click(function() {
